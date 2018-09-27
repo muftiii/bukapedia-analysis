@@ -1,0 +1,65 @@
+[INFO  - 2018-09-25T03:05:49.645Z] GhostDriver - Main - running on port 60118
+[INFO  - 2018-09-25T03:05:51.842Z] Session [e9082c90-c06f-11e8-885f-2d98745fec19] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2018-09-25T03:05:51.842Z] Session [e9082c90-c06f-11e8-885f-2d98745fec19] - page.customHeaders:  - {}
+[INFO  - 2018-09-25T03:05:51.842Z] Session [e9082c90-c06f-11e8-885f-2d98745fec19] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2018-09-25T03:05:51.842Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: e9082c90-c06f-11e8-885f-2d98745fec19
+[ERROR - 2018-09-25T03:05:54.968Z] Session [e9082c90-c06f-11e8-885f-2d98745fec19] - page.onError - msg: ReferenceError: Can't find variable: $
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-09-25T03:05:54.969Z] Session [e9082c90-c06f-11e8-885f-2d98745fec19] - page.onError - stack:
+  global code (https://www.tokopedia.com/p/fashion-wanita/atasan?ob=8:1)
+  insertBefore (:0)
+  (anonymous function) (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4339)
+  c (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4341)
+  Cc (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4205)
+  h (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4236)
+  (anonymous function) (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4156)
+  (anonymous function) (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4238)
+  (anonymous function) (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4237)
+  we (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4244)
+  push (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4245)
+  (anonymous function) (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4245)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-09-25T03:05:54.970Z] Session [e9082c90-c06f-11e8-885f-2d98745fec19] - page.onError - msg: ReferenceError: Can't find variable: $
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-09-25T03:05:54.970Z] Session [e9082c90-c06f-11e8-885f-2d98745fec19] - page.onError - stack:
+  (anonymous function) (https://www.tokopedia.com/p/fashion-wanita/atasan?ob=8:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-09-25T03:05:54.970Z] Session [e9082c90-c06f-11e8-885f-2d98745fec19] - page.onError - msg: ReferenceError: Can't find variable: $
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-09-25T03:05:54.970Z] Session [e9082c90-c06f-11e8-885f-2d98745fec19] - page.onError - stack:
+  global code (https://www.tokopedia.com/p/fashion-wanita/atasan?ob=8:1)
+  insertBefore (:0)
+  (anonymous function) (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4339)
+  c (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4341)
+  Cc (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4205)
+  h (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4236)
+  (anonymous function) (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4156)
+  (anonymous function) (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4238)
+  (anonymous function) (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4237)
+  we (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4244)
+  push (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4245)
+  (anonymous function) (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4245)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-09-25T03:05:54.972Z] Session [e9082c90-c06f-11e8-885f-2d98745fec19] - page.onError - msg: ReferenceError: Can't find variable: $
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-09-25T03:05:54.972Z] Session [e9082c90-c06f-11e8-885f-2d98745fec19] - page.onError - stack:
+  (anonymous function) (https://www.tokopedia.com/p/fashion-wanita/atasan?ob=8:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-09-25T03:05:55.654Z] Session [e9082c90-c06f-11e8-885f-2d98745fec19] - page.onError - msg: ReferenceError: Can't find variable: $
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-09-25T03:05:55.654Z] Session [e9082c90-c06f-11e8-885f-2d98745fec19] - page.onError - stack:
+  global code (https://www.tokopedia.com/p/fashion-wanita/atasan?ob=8:2)
+  insertBefore (:0)
+  (anonymous function) (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4339)
+  (anonymous function) (https://www.googletagmanager.com/gtm.js?id=GTM-TN8CNF:4340)
+
+  phantomjs://platform/console++.js:263 in error

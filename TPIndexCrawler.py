@@ -5,7 +5,6 @@ import time
 import datetime
 import mysql.connector
 
-page = 1
 categories = {
     'tp01': 'https://www.tokopedia.com/p/kategori-fashion-wanita?ob=8',
     'tp02': 'https://www.tokopedia.com/p/kategori-fashion-pria?ob=8',
@@ -34,7 +33,8 @@ categories = {
     'tp25': 'https://www.tokopedia.com/p/kategori-software?ob=8',
 }
 
-def collectData(kode, url, page):
+
+def collectData(kode, url, page, numberOfPage):
     chromeOptions = webdriver.ChromeOptions()
     prefs = {"profile.managed_default_content_settings.images": 2}
     chromeOptions.add_experimental_option("prefs", prefs)
@@ -71,17 +71,19 @@ def collectData(kode, url, page):
                 dbcursor.execute('INSERT INTO tpindextest (link, kategori, lastcheck) VALUES (%s,%s,%s)',(link[i * 2].get('ng-href').split('?trkid=')[0], kode, timestamp))
         except:
             print('error. check connection?')
-    if (page <1):
+    if page < numberOfPage:
         collectData(kode, url, page+1)
     dbconnection.close
 
+
 if __name__ == '__main__':
     mulai = time.time()
+    numberOfPage = 1
     #multiprocessing.freeze_support()
     processes = [ ]
     for kode,nama in categories.items():
         print('process '+kode)
-        t = multiprocessing.Process(target=collectData, args=(kode,nama,page))
+        t = multiprocessing.Process(target=collectData, args=(kode, nama, 1, numberOfPage))
         processes.append(t)
         t.start()
 
