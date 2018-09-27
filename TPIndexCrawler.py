@@ -8,30 +8,30 @@ import mysql.connector
 page = 1
 categories = {
     'tp01': 'https://www.tokopedia.com/p/kategori-fashion-wanita?ob=8',
-    'tp02': 'tokopedia.com/p/kategori-fashion-pria?ob=8',
-    'tp03': 'tokopedia.com/p/kategori-fashion-muslim?ob=8',
-    'tp04': 'tokopedia.com/p/kategori-fashion-anak?ob=8',
-    'tp05': 'tokopedia.com/p/kategori-kecantikan?ob=8',
-    'tp06': 'tokopedia.com/p/kateogri-kesehatan?ob=8',
-    'tp07': 'tokopedia.com/p/kategori-perawatan-tubuh?ob=8',
-    'tp08': 'tokopedia.com/p/kategori-handphone-tablet?ob=8',
-    'tp09': 'tokopedia.com/p/kategori-laptop-aksesoris?ob=8',
-    'tp10': 'tokopedia.com/p/kategori-komputer-aksesoris?ob=8',
-    'tp11': 'tokopedia.com/p/kategori-elektronik?ob=8',
-    'tp12': 'tokopedia.com/p/kategori-kamera?ob=8',
-    'tp13': 'tokopedia.com/p/kategori-gaming?ob=8',
-    'tp14': 'tokopedia.com/p/kategori-ibu-bayi?ob=8',
-    'tp15': 'tokopedia.com/p/kategori-rumah-tangga?ob=8',
-    'tp16': 'tokopedia.com/p/kategori-dapur?ob=8',
-    'tp17': 'tokopedia.com/p/kategori-makanan-minuman?ob=8',
-    'tp18': 'tokopedia.com/p/kategori-souvenir-kado?ob=8',
-    'tp19': 'tokopedia.com/p/kategori-buku?ob=8',
-    'tp20': 'tokopedia.com/p/kategori-otomotif?ob=8',
-    'tp21': 'tokopedia.com/p/kategori-olahraga?ob=8',
-    'tp22': 'tokopedia.com/p/kategori-film-musik?ob=8',
-    'tp23': 'tokopedia.com/p/kategori-office-stationery?ob=8',
-    'tp24': 'tokopedia.com/p/kategori-mainan-hobi?ob=8',
-    'tp25': 'tokopedia.com/p/kategori-software?ob=8'
+    'tp02': 'https://www.tokopedia.com/p/kategori-fashion-pria?ob=8',
+    'tp03': 'https://www.tokopedia.com/p/kategori-fashion-muslim?ob=8',
+    'tp04': 'https://www.tokopedia.com/p/kategori-fashion-anak?ob=8',
+    'tp05': 'https://www.tokopedia.com/p/kategori-kecantikan?ob=8',
+    'tp06': 'https://www.tokopedia.com/p/kateogri-kesehatan?ob=8',
+    'tp07': 'https://www.tokopedia.com/p/kategori-perawatan-tubuh?ob=8',
+    'tp08': 'https://www.tokopedia.com/p/kategori-handphone-tablet?ob=8',
+    'tp09': 'https://www.tokopedia.com/p/kategori-laptop-aksesoris?ob=8',
+    'tp10': 'https://www.tokopedia.com/p/kategori-komputer-aksesoris?ob=8',
+    'tp11': 'https://www.tokopedia.com/p/kategori-elektronik?ob=8',
+    'tp12': 'https://www.tokopedia.com/p/kategori-kamera?ob=8',
+    'tp13': 'https://www.tokopedia.com/p/kategori-gaming?ob=8',
+    'tp14': 'https://www.tokopedia.com/p/kategori-ibu-bayi?ob=8',
+    'tp15': 'https://www.tokopedia.com/p/kategori-rumah-tangga?ob=8',
+    'tp16': 'https://www.tokopedia.com/p/kategori-dapur?ob=8',
+    'tp17': 'https://www.tokopedia.com/p/kategori-makanan-minuman?ob=8',
+    'tp18': 'https://www.tokopedia.com/p/kategori-souvenir-kado?ob=8',
+    'tp19': 'https://www.tokopedia.com/p/kategori-buku?ob=8',
+    'tp20': 'https://www.tokopedia.com/p/kategori-otomotif?ob=8',
+    'tp21': 'https://www.tokopedia.com/p/kategori-olahraga?ob=8',
+    'tp22': 'https://www.tokopedia.com/p/kategori-film-musik?ob=8',
+    'tp23': 'https://www.tokopedia.com/p/kategori-office-stationery?ob=8',
+    'tp24': 'https://www.tokopedia.com/p/kategori-mainan-hobi?ob=8',
+    'tp25': 'https://www.tokopedia.com/p/kategori-software?ob=8',
 }
 
 def collectData(kode, url, page):
@@ -39,8 +39,7 @@ def collectData(kode, url, page):
     prefs = {"profile.managed_default_content_settings.images": 2}
     chromeOptions.add_experimental_option("prefs", prefs)
     chromeOptions.add_argument('headless')
-    browser = webdriver.Chrome(options=chromeOptions,
-                               executable_path=r'C:/Users/dormamu/AppData/Local/Programs/Python/Python37-32/chromedriver.exe')
+    browser = webdriver.Chrome(options=chromeOptions,executable_path=r'C:/Users/dormamu/AppData/Local/Programs/Python/Python37-32/chromedriver.exe')
     if (page == 0):
         browser.get(url)
         innerHTML = browser.execute_script("return document.body.innerHTML")
