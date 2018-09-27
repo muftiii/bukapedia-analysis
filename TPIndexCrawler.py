@@ -52,8 +52,6 @@ def collectData(kode, url, page):
         browser.close()
     htmlElem = html.document_fromstring(innerHTML)
     nama = htmlElem.cssselect('div.product-name.ng-binding')
-    review = htmlElem.cssselect('span.reviewer-count.ng-binding')
-    harga = htmlElem.cssselect('div.product-price.ng-binding')
     link = htmlElem.cssselect('a.category-tracker')
     dbconnection = mysql.connector.connect(
         host="localhost",
